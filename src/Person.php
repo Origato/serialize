@@ -1,4 +1,4 @@
-<?
+<?php
 class Person implements \JsonSerializable
 {
     const MAX_POSSIBLE_AGE = 150;

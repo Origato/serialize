@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-
+echo 123;
 require_once __DIR__ . '/../src/Person.php';
 require_once __DIR__ . '/../src/Serializer.php';
 
@@ -14,5 +14,5 @@ $person = [
 ];
 
 $serializer = new Serializer();
-$res = $serializer->serialize($person, "yaml");
-print_r($res) . \PHP_EOL;
+$res = $serializer->serialize($person, "json");
+print_r($res);

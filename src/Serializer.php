@@ -1,4 +1,7 @@
-<?	
+<?php
+require_once __DIR__ . "/../vendor/autoload.php";
+use \Symfony\Component\Yaml\Yaml;
+
 class Serializer
 {
 	public function serialize($array, $type)
@@ -11,8 +14,8 @@ class Serializer
 					
 				break;
 			case "yaml":
-			
-					$serialize = "";
+
+					$serialize = Yaml::dump($array);
 					
 				break;
 			case "xml":
@@ -23,6 +26,7 @@ class Serializer
 			default:
 				$serialize = null;
 		}
+
 		return $serialize;
 	}
 }

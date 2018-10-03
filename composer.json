@@ -1,0 +1,15 @@
+{
+    "name": "shiro/shiro",
+    "type": "project",
+    "license": "lesson",
+    "authors": [
+        {
+            "name": "Noha Aleksandr",
+            "email": "sashanoga1989@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/yaml": "^4.1"
+    }
+}
